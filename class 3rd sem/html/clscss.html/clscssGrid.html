@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "header header"
+                "left right"
+                "footer footer";
+            height: 100vh;
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #ed6469;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .left-column {
+            grid-area: left;
+            background-color: #68cff1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .right-column {
+            grid-area: right;
+            background-color: #65f53d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #fab12b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Top Horizontal Column</div>
+        <div class="left-column">Left Vertical Column</div>
+        <div class="right-column">Right Vertical Column</div>
+        <div class="footer">Bottom Horizontal Column</div>
+    </div>
+</body>
+</html>
+

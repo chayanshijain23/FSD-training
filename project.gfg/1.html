@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Tracker</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">CarbonTracker</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#log">Track Footprint</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#tips">Tips</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Track Your Carbon Footprint</h1>
+            <p>Understand your daily activities' environmental impact and learn how to reduce it!</p>
+            <a href="#log" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+       <!-- Carbon Log Section -->
+    <section id="log">
+        <div class="log-form">
+            <h2>Log Your Activities</h2>
+            <form id="carbonForm">
+                <div class="form-group">
+                    <label for="transport">Transportation (km):</label>
+                    <input type="number" id="transport" placeholder="Distance in km">
+                </div>
+                <div class="form-group">
+                    <label for="electricity">Electricity Usage (hours):</label>
+                    <input type="number" id="electricity" placeholder="Hours used (60W bulb equivalent)">
+                </div>
+                <div class="form-group">
+                    <label for="meatConsumption">Meat Consumption (grams):</label>
+                    <input type="number" id="meatConsumption" placeholder="Amount of meat consumed">
+                </div>
+                <button type="button" id="calculate">Calculate Footprint</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h2>Your Carbon Footprint</h2>
+        <div class="dashboard-content">
+            <canvas id="carbonChart"></canvas>
+            <div class="footprint-info">
+                <h3>Total Footprint: <span id="totalFootprint">0</span> kg 
+                    CO2</h3>
+                    <div id="progress-bar">
+                        <div id="progress" style="width: 0%;"></div>
+                    </div>
+                    <p id="footprintFeedback"></p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sustainability Tips Section -->
+        <section id="tips">
+            <h2>Sustainability Tips</h2>
+            <div id="tips-container">
+                <ul id="tips-list">
+                    <li>Reduce meat consumption to lower carbon emissions.</li>
+                    <li>Use energy-efficient appliances to save power.</li>
+                    <li>Carpool or use public transport to reduce emissions.</li>
+                    <li>Unplug devices when not in use to save electricity.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 CarbonTracker. Promote a sustainable lifestyle.</p>
+        </footer>
+    
+        <script src="3.JS"></script>
+    </body>
+    </html>             

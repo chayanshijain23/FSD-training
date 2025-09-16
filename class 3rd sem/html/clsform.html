@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d7f56d; /* Light green background */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3d5c07; /* Dark green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #e6ed66; /* yellowish green */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #9eec29; /* grass green  */
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #c3c91d; /* green  */
+        }
+        .book {
+            background-color: white; /* White background for books */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            margin-bottom: 20px;
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+        }
+        .book img {
+            width: 100px; /* Set fixed width for images */
+            height: auto;
+            margin-right: 20px; /* Space between image and text */
+            border-radius: 5px; /* Round corners of images */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2fed09; /* Dark pink */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Indian Book Store</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#contact">Contact Us</a>
+        <a href="add to Cart">Cart</a>
+    </nav>
+
+    <!-- Main Content Section: Books Available -->
+    <section id="books">
+        <h2>Books Available</h2>
+
+        <!-- Book 1 -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/91saO95VziL.AC_UF1000,1000_QL80.jpg" alt="The God of Small Things">
+            <div>
+                <p><strong>Title:</strong> The God of  Things</p>
+                <p><strong>Author:</strong> Arundhati Roy</p>
+                <p><strong>Price:</strong> ₹800</p>
+                
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiRfM7f7Tn1S5eNBccGRBqL5Dbu1hOH0-Qtw&s" alt="Midnight's Children">
+            <div>
+                <p><strong>Title:</strong> Midnight's Children</p>
+                <p><strong>Author:</strong> Salman Rushdie</p>
+                <p><strong>Price:</strong> ₹1000</p>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/be/Train_to_Pakistan.jpg" alt="Train to Pakistan">
+            <div>
+                <p><strong>Title:</strong> Train to Pakistan</p>
+                <p><strong>Author:</strong> Khushwant Singh</p>
+                <p><strong>Price:</strong> ₹700</p>
+            </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327909065i/95186.jpg" alt="The Inheritance of Loss">
+            <div>
+                <p><strong>Title:</strong> The Inheritance of Loss</p>
+                <p><strong>Author:</strong> Kiran Desai</p>
+                <p><strong>Price:</strong> 300</p>
+            </div>
+        </div>
+
+        <!-- Book 5 -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/71Nes-1tfPL.AC_UF1000,1000_QL80.jpg" alt="The White Tiger">
+            <div>
+                <p><strong>Title:</strong> The White Tiger</p>
+                <p><strong>Author:</strong> Aravind Adiga</p>
+                <p><strong>Price:</strong> ₹450</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us at: bookstore@example.com</p>
+        <p>Phone: +91-800-123-4567</p>
+    </footer>
+
+</body>
+</html>

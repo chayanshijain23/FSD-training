@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class and Object Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f6d8f0;
+    }
+
+    .card {
+      background: #ac3e75;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(24, 23, 23, 0.1);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .age {
+      font-size: 18px;
+      color: #bcb8b8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="personCard">
+    <div class="name" id="personName"></div>
+    <div class="age" id="personAge"></div>
+  </div>
+
+  <script>
+    // Define a Person class
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      getDetails() {
+        return `${this.name} is ${this.age} years old.`;
+      }
+    }
+
+    // Create an object from the Person class
+    const person1 = new Person("Priya",18);
+
+    // Update the webpage with the object data
+    document.getElementById("personName").textContent = person1.name;
+    document.getElementById("personAge").textContent = `Age: ${person1.age}`;
+  </script>
+
+</body>
+</html>

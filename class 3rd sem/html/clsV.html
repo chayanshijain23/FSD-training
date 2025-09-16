@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c2c6c9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #a0264b;
+        }
+        .catalog-container {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .book {
+            background-color: #d38686;
+            border: 1px solid #8a1717;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(210, 92, 92, 0.1);
+            width: 60%; /* Set a reduced width */
+            margin-bottom: 15px;
+          
+            display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    flex-direction: column; 
+            
+        }
+        .book img {
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+            height: 100px;
+        }
+        .book h3 {
+            color: #a20a35;
+            margin: 10px 0 5px;
+        }
+        .book p {
+            margin: 5px 0;
+        }
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #59051f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Book Catalog</h1>
+
+    <div class="catalog-container">
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/71dKmxjiFVL._SY522_.jpg" alt="Book Cover">
+            <h3>The Great Gatsby</h3>
+            <p>Author: F. Scott Fitzgerald</p>
+            <p>Genre: Fiction</p>
+            <p class="price">$99</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/51cmi8hAUbL._SY445_SX342_.jpg" alt="Book Cover">
+            <h3>1984</h3>
+            <p>Author: George Orwell</p>
+            <p>Genre: Dystopian, Political Fiction</p>
+            <p class="price">$149</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/61HrYF1O3tL._AC_UY436_FMwebp_QL65_.jpg" alt="Book Cover">
+            <h3>To Kill a Mockingbird</h3>
+            <p>Author: Harper Lee</p>
+            <p>Genre: Fiction, Drama</p>
+            <p class="price">$150</p>
+            <button>Add to cart</button>
+        </div>
+    
+
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/51hLS+zZRPL._SX342_SY445_.jpg" alt="Book Cover">
+            <h3>The Catcher in the Rye</h3>
+            <p>Author: J.D. Salinger</p>
+            <p>Genre: Fiction</p>
+            <p class="price">$50</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/31Vf5wPNANL._SY445_SX342_.jpg" alt="Book Cover">
+            <h3>Pride and Prejudice</h3>
+            <p>Author: Jane Austen</p>
+            <p>Genre: Romance</p>
+            <p class="price">$40</p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <iframe src="https://m.media-amazon.com/images/I/A19lEUQ9OCL._AC_UF1000,1000_QL80_.jpg" cols ="80" rows="40" frameborder="30"></iframe>
+</body>
+</html>
